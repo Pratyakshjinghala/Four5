@@ -1,0 +1,166 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(212, 211,211);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(7, 1, 17);
+    color: white;
+    
+    
+
+}
+.logo img{
+    max-height: 50px;
+    padding: 5px;
+    margin-left: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    font-size: 20px;
+    color: white;
+}
+ul li a:hover{
+    color: rgb(2, 202, 2);
+}
+.icon{
+    display: none;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12 px;
+    cursor: pointer;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.cards .crd{
+    margin-inline: 25px;
+    text-align: center;
+}
+
+
+.crd h3{
+    margin-top: -5px;
+    padding: 10px;
+    
+    background-color: white;
+}
+.crd img{
+    width: 300px;
+    height: 340px;
+}
+.crd:hover{
+    transform: translateY(-10px);
+}
+.crd{
+    transition:0.3s ease-in-out
+}
+.head{
+    padding: 55px;
+    text-align: center;
+}
+.head span{
+    color: orangered;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 44px;
+    margin-top: 33px;
+    color: white;
+    flex-wrap: wrap;
+    
+}
+
+
+
+/* item page css */
+.itempage{
+    display: none;
+    margin-top: 33px;
+    margin-left: 25px;
+    
+    
+}
+.itempage img{
+    width: 400px;
+}
+.itemtext{
+    margin-inline: 24px;
+}
+.itemtext h2{
+    color: rgb(4, 150, 4);
+}
+.itempage input{
+    width: 30px;
+    padding: 4px;
+    font-size: 20px;
+}
+.itemtext a{
+    text-decoration: none;
+    padding: 4px 20px ;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+
+}
+.itemtext a:hover{
+    border: 2px solid rgb(12, 152, 12);
+    color: black;
+    background: transparent;
+   cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        margin-right: 15px;
+    }
+    .showdata{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 45px;
+        background-color: rgb(120, 119, 119);
+        width: 100%;
+        
+        gap: 20px;
+        padding: 0;
+        text-align: center;
+    }
+    .crd img{
+        width: 290px;
+        height: 330px;
+    }
+    
+    
+}

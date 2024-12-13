@@ -1,0 +1,285 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(212, 211,211);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(7, 1, 17);
+    color: white;
+    
+    
+    
+
+}
+.logo img{
+    max-height: 50px;
+    padding: 5px;
+    margin-left: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    font-size: 20px;
+    color: white;
+}
+ul li a:hover{
+    color: rgb(2, 202, 2);
+}
+.icon{
+    display: none;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12 px;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 155px;
+
+}
+.maintext h1{
+    font-size: 55px;
+    color: rgb(3, 136, 136);
+
+}
+.maintext h2{
+    font-size: 33px;
+}
+.maintext button{
+    width: 120px;
+    height: 34px;
+   background-color: rgb(12, 152, 12);
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+.maintext button:hover{
+    border: 2px solid rgb(12, 152, 12);
+    color: black;
+    background: transparent;
+   cursor: pointer;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.cards .crd{
+    margin-inline: 25px;
+    text-align: center;
+}
+
+
+.crd h3{
+    margin-top: -5px;
+    padding: 10px;
+    
+    background-color: white;
+}
+.crd img{
+    width: 300px;
+    height: 340px;
+}
+.crd{
+    transition:0.3s ease-in-out
+}
+.crd:hover{
+    transform: translateY(10px);
+}
+.head{
+    padding: 55px;
+    text-align: center;
+}
+.head span{
+    color: orangered;
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.reviews .rcard{
+    width: 260px;
+    height: 240px;
+    background-color: #fff;
+    text-align: center;
+    padding: 16px;
+    margin-inline: 20px;
+}
+.rcard:hover{
+    background-color:rgb(170, 170, 170);
+    transition: 1s ease;
+
+}
+.rcard img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.rcard button{
+    width: 90px;
+    height: 30px;
+   background-color: rgb(12, 152, 12);
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-top: 20px;
+}
+.rcard button:hover{
+    border: 2px solid rgb(12, 152, 12);
+    color: black;
+    background: transparent;
+   cursor: pointer;
+}
+.connect{
+    text-align: center;
+    
+}
+.connect input{
+    width: 380px;
+    padding: 11px;
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 11px;
+    border: 2px solid black;
+}
+.connect button{
+    width: 130px;
+    height: 36px;
+   background-color: rgb(12, 152, 12);
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+}
+.connect button:hover{
+    border: 2px solid rgb(12, 152, 12);
+    color: black;
+    background: transparent;
+   cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 44px;
+    margin-top: 33px;
+    color: white;
+    flex-wrap: wrap;
+    
+}
+/* item page css */
+.itempage{
+    display: none;
+    margin-top: 33px;
+    margin-left: 25px;
+    
+    
+}
+.itempage img{
+    width: 400px;
+}
+.itemtext{
+    margin-inline: 24px;
+}
+.itemtext h2{
+    color: rgb(4, 150, 4);
+}
+.itempage input{
+    width: 30px;
+    padding: 4px;
+    font-size: 20px;
+}
+.itemtext a{
+    text-decoration: none;
+    padding: 4px 20px ;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+
+}
+.itemtext a:hover{
+    border: 2px solid rgb(12, 152, 12);
+    color: black;
+    background: transparent;
+   cursor: pointer;
+}
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        margin-right: 15px;
+    }
+    .showdata{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 45px;
+        background-color: rgb(120, 119, 119);
+        width: 100%;
+        
+        gap: 20px;
+        padding: 0;
+        text-align: center;
+    }
+    .maintext h1{
+        font-size: 40px;
+    }
+    .maintext h3{
+        font-size: 25px;
+    }
+     
+    .connect input{
+        width: 70%;
+    }
+    .main img{
+        width: 60%;
+    }
+    .crd img{
+        width: 290px;
+        height: 330px;
+    }
+    
+}
+
+@media only screen and (max-width:1000px) {
+    .main{
+        display: block;
+        text-align: center;
+    }
+    .main img{
+        margin-top: 20px;
+    }
+    .footer{
+        
+        text-align: center;
+    }
+    
+}
